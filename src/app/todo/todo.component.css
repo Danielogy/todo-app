@@ -1,0 +1,106 @@
+.text{
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50vw;
+}
+.text input{
+    width: 50%;
+    height: 40px;
+    border: solid #f0f0f0 1px;
+    box-shadow: #f6f6f6 0 2px 2px;
+    background-color: #f7f7f7;
+    font-size: 1rem;
+    padding-left: 10px;
+}
+
+.text button{
+    margin-left: 20px;
+    width: 10%;
+    height: 40px;
+    border: solid rgb(179, 137, 24) 1px;
+    background-color: #da9f5d;
+    font-size: 1.3rem;
+}
+
+.todos{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+.todo{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 50%;
+    border: solid #f7f7f7 1px;
+    padding: 2%;
+}
+
+.todo h1{
+    border-right: solid #d3d1d1 1px;
+    padding-right: 20px;
+}
+
+.todo p{
+    font-size: 1.2rem;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.remove{
+    font-size: 1.5rem;
+}
+
+.completed{
+    text-decoration: line-through;
+}
+
+.background{
+    background-color: #f7f7f7;
+}
+
+.remove:hover{
+    cursor: pointer;
+}
+
+@media screen and (max-width: 1200px){
+    .text{
+        width: 100vw;
+    }
+
+    .text input{
+        width: 80%;
+    }
+
+    .todo{
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 806px){
+    .text{
+        flex-direction: column;
+    }
+
+    .text input{
+        margin-bottom: 20px;
+    }
+
+    #submit{
+        width: 50%;
+    }
+
+    .todo{
+        height: 100px;
+    }
+
+    .todo h1{
+        padding-left: 20px;
+    }
+}

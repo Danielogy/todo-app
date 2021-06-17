@@ -1,0 +1,12 @@
+<div class="text">
+    <input type="text" name="todo" id="todo" #p>
+    <button id="submit" (click)="submitTodo(p.value)"> + </button>
+</div>
+
+
+<div class="todos">
+    <div *ngFor="let todo of todos; let i = index" class="todo {{ ((i % 2 === 1) ? 'background' : '') }} " (click)="toggleComplete(i)">
+        <h1> {{ i }} </h1>
+        <p>{{ todo }} <span class="remove" (click)="deleteTodo(i)"> &#10006; </span></p>
+    </div>
+</div>
