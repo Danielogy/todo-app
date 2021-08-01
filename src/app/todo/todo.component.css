@@ -18,9 +18,9 @@
 .text button{
     margin-left: 20px;
     width: 10%;
-    height: 40px;
-    border: solid rgb(179, 137, 24) 1px;
-    background-color: #da9f5d;
+    height: 44px;
+    border: solid rgb(241, 137, 126) 2px;
+    background-color: salmon;
     font-size: 1.3rem;
 }
 
@@ -62,7 +62,7 @@
 }
 
 .background{
-    background-color: #f7f7f7;
+    background-color: #1b1b1b;
 }
 
 .remove:hover{
